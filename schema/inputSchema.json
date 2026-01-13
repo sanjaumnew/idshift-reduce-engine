@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Reduce Engine Input Schema",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "accountId": { "type": "string" },
+    "name": { "type": "string" },
+    "email": { "type": "string", "format": "email" },
+    "activityScore": { "type": ["number", "null"] },
+    "type": {
+      "type": "string",
+      "enum": ["human", "bot", "synthetic", "agentic", "unknown"]
+    },
+    "traits": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "value": { "type": ["number", "null"] }
+  },
+  "required": ["id", "type"],
+  "additionalProperties": true
+}

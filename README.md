@@ -1,42 +1,68 @@
-# IDShift SCAN Engine
+# Reduce ⚡ Engine
 
 ![Hero Banner](assets/hero-banner.png)
 
 ## 🔎 Overview
-**IDShift SCAN Engine** is a free-tier identity risk detection tool.  
-It helps organizations and individuals detect:
-- Agentic AI accounts
-- Synthetic identities
-- Compromised or suspicious human accounts
+**Reduce Engine** is a lightweight identity risk reduction tool.  
+It helps organizations and developers **analyze, classify, and reduce risks** in:
+- Human accounts
+- Agentic AI identities
+- Non‑human or synthetic entities
 
-The engine produces **actionable reports** with severity tiers (Low, Medium, High) and remediation guidance.
+The engine produces **clear JSON reports** with schema separation (free vs. premium) and branded visuals for demo and enterprise adoption.
 
 ---
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Build Status](https://img.shields.io/github/actions/workflow/status/yourrepo/ci.yml)
 ![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)
+
 ## 🚀 Features
-- 🛡️ **Agentic AI Detection** — flag non-human accounts and synthetic identities
-- 👤 **Human Risk Profiling** — monitor compromised or suspicious accounts
-- 📊 **Actionable Reports** — JSON schema with severity badges and remediation steps
-- 🌐 **Web + CLI Support** — run scans via browser or command line
-- 🎨 **Branded UI** — hero banner, favicon, and dark mode support
+- ⚙️ Modular core with drop‑in scripts and explicit error handling  
+- 📊 JSON reports (`reportSchema.json` and `reportSample.json`)  
+- 🛡️ Risk flags for anomalies in identity data  
+- 🎨 Locked Reduce logo, hero banner, favicon, and social previews  
+- 🌐 Web + CLI support  
 
 ---
 
 ## 📂 Project Structure
+reduce/ ├── assets/              # Logos, banners, favicons ├── docs/                # Contributor guides, onboarding ├── schema/              # Report schema and samples │   ├── reportSchema.json │   └── reportSample.json ├── src/                 # Core engine scripts │   ├── reduce.js │   ├── classify.js │   └── utils/ ├── tests/               # QA scripts and sample reports └── README.md            # Project overview
 
 ---
 
 ## 🖥️ Usage
 
 ### Web (GitHub Pages)
-1. Open [https://scan.idshift.cloud](https://scan.idshift.cloud).
-2. Click **Run Free Scan**.
-3. View sample results with severity badges.
+1. Open [https://reduce.idshift.cloud](https://reduce.idshift.cloud)  
+2. Click **Run Reduce**  
+3. View sample JSON reports with risk flags  
 
 ### CLI
-Run scans locally:
+Run Reduce locally:
 ```bash
-node run-cli.js
+git clone https://github.com/your-org/reduce.git
+cd reduce
+npm install
+npm run reduce --input accounts.json --output report.json
+📊 Report Schema
+Reports are generated in JSON format with clear separation of free vs. premium fields
+{
+  "accountId": "12345",
+  "classification": "human",
+  "riskFlags": ["none"],
+  "timestamp": "2026-01-13T18:30:00Z"
+}
+📈 Roadmap
+- [x] Report schema finalized (reportSchema.json)
+- [x] Sample report (reportSample.json)
+- [x] Logo locked and branded assets prepared
+- [ ] Premium‑tier separation
+- [ ] API integration
+- [ ] Enterprise dashboard
+🤝 Contributing
+We welcome contributions! Please read the guidelines in /docs/contributing.md before submitting pull requests.
+📜 License
+MIT License. See LICENSE for details.
+
+---

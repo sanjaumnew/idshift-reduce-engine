@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Reduce Engine Report Schema",
+  "type": "object",
+  "properties": {
+    "accountId": { "type": "string" },
+    "classification": {
+      "type": "string",
+      "enum": ["human", "synthetic", "agentic_ai", "unknown"]
+    },
+    "riskFlags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "signals": {
+      "type": "object",
+      "properties": {
+        "hasHumanName": { "type": "boolean" },
+        "emailValid": { "type": "boolean" },
+        "activityScore": { "type": "number" },
+        "aiTraits": { "type": "boolean" },
+        "syntheticHints": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "remediation": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "identityId": { "type": "string" },
+    "identityType": {
+      "type": "string",
+      "enum": ["human", "nonHuman", "agenticAI"]
+    },
+    "roles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "privileges": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "roleOverlap": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "roleA": { "type": "string" },
+          "roleB": { "type": "string" },
+          "overlapScore": { "type": "number" }
+        },
+        "required": ["roleA", "roleB", "overlapScore"],
+        "additionalProperties": false
+      }
+    },
+    "unusedPrivileges": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "optimizationRecommendation": {
+      "type": "string",
+      "enum": ["mergeRoles", "revokePrivileges", "quarantineIdentity"]
+    },
+    "automationFlag": { "type": "boolean" },
+    "riskReductionScore": { "type": "number" },
+    "tier": {
+      "type": "string",
+      "enum": ["free", "premium"]
+    }
+  },
+  "required": ["accountId", "classification", "riskFlags", "timestamp"],
+  "additionalProperties": false
+}

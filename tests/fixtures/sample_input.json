@@ -1,0 +1,40 @@
+{
+  "records": [
+    {
+      "id": "001",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "activityScore": 75,
+      "traits": [],
+      "type": "human",
+      "value": 20
+    },
+    {
+      "id": "002",
+      "name": "Bot Account",
+      "email": "bot@system.com",
+      "activityScore": 10,
+      "traits": ["synthetic"],
+      "type": "bot",
+      "value": 50
+    },
+    {
+      "id": "003",
+      "name": "Unknown User",
+      "email": "invalid-email",
+      "activityScore": null,
+      "traits": [],
+      "type": "unknown",
+      "value": null
+    },
+    {
+      "id": "004",
+      "name": "AI Entity",
+      "email": "agent@system.ai",
+      "activityScore": 90,
+      "traits": ["agentic"],
+      "type": "agentic",
+      "value": 100
+    }
+  ]
+}

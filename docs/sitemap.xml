@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://sanjaumnew.github.io/idshift-reduce-engine/</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Manifest -->
+  <url>
+    <loc>https://sanjaumnew.github.io/idshift-reduce-engine/manifest.json</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Assets (optional: only list public-facing images you want indexed) -->
+  <url>
+    <loc>https://sanjaumnew.github.io/idshift-reduce-engine/assets/hero-banner.png</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://sanjaumnew.github.io/idshift-reduce-engine/assets/idshift-reduce-logo.png</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>

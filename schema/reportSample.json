@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "accountId": "001",
+      "classification": "human",
+      "riskFlags": [],
+      "severity": "low",
+      "signals": {
+        "hasHumanName": true,
+        "emailValid": true,
+        "activityScore": 75,
+        "aiTraits": false,
+        "syntheticHints": false
+      },
+      "remediation": [],
+      "timestamp": "2026-01-14T01:11:00Z",
+      "identityId": "HUM-001",
+      "identityType": "human",
+      "roles": ["FinanceAnalyst", "LegacyViewer"],
+      "privileges": ["read:db", "write:bucket"],
+      "roleOverlap": [
+        { "roleA": "FinanceAnalyst", "roleB": "FinanceViewer", "overlapScore": 0.85 }
+      ],
+      "unusedPrivileges": ["write:bucket"],
+      "optimizationRecommendation": "mergeRoles",
+      "automationFlag": true,
+      "riskReductionScore": 0.72,
+      "tier": "free"
+    },
+    {
+      "accountId": "002",
+      "classification": "synthetic",
+      "riskFlags": ["synthetic_identity"],
+      "severity": "high",
+      "signals": {
+        "hasHumanName": false,
+        "emailValid": true,
+        "activityScore": 10,
+        "aiTraits": false,
+        "syntheticHints": true
+      },
+      "remediation": [
+        "Review account manually",
+        "Check for behavioral anomalies",
+        "Verify identity documents and cross-check metadata"
+      ],
+      "timestamp
