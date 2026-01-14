@@ -1,19 +1,24 @@
 {
   "name": "IDShift SCAN Engine",
-  "short_name": "IDShift SCAN",
-  "start_url": "/",
+  "short_name": "IDShift REDUCE",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f9f9fb",
   "theme_color": "#0a1f44",
-  "description": "SCAN engine for identity risk detection",
+  "description": "REDUCE engine for Privilege and role optimization to reduce access sprawl.",
   "icons": [
     {
-      "src": "assets/favicon.png",
+      "src": "../assets/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "assets/hero-banner.png",
+      "src": "../assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "../assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
