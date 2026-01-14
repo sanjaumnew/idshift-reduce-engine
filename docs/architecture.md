@@ -1,4 +1,4 @@
-# Reduce ⚡ Architecture
+# Reduce Architecture
 
 This document explains how **Reduce Engine** is structured: modules, data flow, schema, error handling, and extensibility. It’s designed for contributors and integrators to understand the internals quickly and make safe, modular changes.
 

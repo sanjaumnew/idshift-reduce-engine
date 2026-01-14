@@ -45,7 +45,7 @@ git push origin feature/my-new-feature
 - Go to your fork on GitHub.
 - Click Compare & pull request.
 - Provide a clear description of your changes.
-✅ Contribution Checklist- [ ] Code is modular and drop‑in ready
+✅ Contribution Checklist- []Code is modular and drop‑in ready
 - [ ] Error handling and logging included
 - [ ] Tests pass locally (npm test)
 - [ ] Documentation updated in /docs

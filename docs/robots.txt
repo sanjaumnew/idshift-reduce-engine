@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Point search engines to your sitemap
+# search engines to your sitemap
 Sitemap: https://sanjaumnew.github.io/reduce/sitemap.xml

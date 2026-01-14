@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#f9f9fb",
   "theme_color": "#0a1f44",
-  "description": "SCAN engine for identity risk detection.",
+  "description": "SCAN engine for identity risk detection",
   "icons": [
     {
       "src": "assets/favicon.png",
