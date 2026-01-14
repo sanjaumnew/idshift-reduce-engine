@@ -1,6 +1,12 @@
-# Reduce ⚡ Engine
+# Reduce ⚡ Engine (idshift-reduce-engine)
+
+IDShift Reduce Engine — A modular identity risk detection and privilege optimization engine.  
+Provides JSON‑driven account analysis, classification, and actionable reporting to reduce access sprawl.  
+Includes demo site, schema validation, branded assets, and PWA support for GitHub Pages deployment.
 
 ![Hero Banner](assets/hero-banner.png)
+
+---
 
 ## 🔎 Overview
 **Reduce Engine** is a lightweight identity risk reduction tool.  
@@ -16,6 +22,8 @@ The engine produces **clear JSON reports** with schema separation (free vs. prem
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Build Status](https://img.shields.io/github/actions/workflow/status/yourrepo/ci.yml)
 ![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)
+
+---
 
 ## 🚀 Features
 - ⚙️ Modular core with drop‑in scripts and explicit error handling  
@@ -41,7 +49,7 @@ reduce/ ├── assets/              # Logos, banners, favicons ├── docs
 ### CLI
 Run Reduce locally:
 ```bash
-git clone https://github.com/your-org/reduce.git
+git clone https://github.com/sanjaumnew/idshift-reduce-engine.git
 cd reduce
 npm install
 npm run reduce --input accounts.json --output report.json
@@ -61,8 +69,10 @@ Reports are generated in JSON format with clear separation of free vs. premium f
 - [ ] API integration
 - [ ] Enterprise dashboard
 🤝 Contributing
-We welcome contributions! Please read the guidelines in /docs/contributing.md before submitting pull requests.
+We welcome contributions! Please read the guidelines in /docs/Contributing.md before submitting pull requests.
+
 📜 License
 MIT License. See LICENSE for details.
 
 ---
+
