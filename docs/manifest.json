@@ -1,5 +1,5 @@
 {
-  "name": "IDShift SCAN Engine",
+  "name": "IDShift REDUCE Engine",
   "short_name": "IDShift REDUCE",
   "start_url": "./index.html",
   "display": "standalone",
